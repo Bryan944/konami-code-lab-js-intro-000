@@ -18,16 +18,19 @@ function init() {
 }
 
 
+function triggerKeyDown(key) {
+  const keyboardEvent = new KeyboardEvent("keydown", { key });
+  document.body.dispatchEvent(keyboardEvent);
+}
+for (let i = 0, l = codes.length; i < l; i++) {
+  triggerKeyDown(codes[i]);
+}
 
 
 let index = 0;
 
 function cheatCodes(codes) {
   const key = codes.key;
-
-  if (key === codes[index]) {
-    index++;
-
     if (index === codes.length) {
       alert("Hurray!");
     }
