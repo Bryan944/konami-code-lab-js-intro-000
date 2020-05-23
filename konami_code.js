@@ -31,7 +31,7 @@ for (let i = 0, l = codes.length; i < l; i++) {
 
 function cheatCodes(codes) {
   const key = codes.key;
-    if (  triggerKeyDown(codes) === true) {         
+    if (  triggerKeyDown(codes) === true) {
       alert("Hurray!");
   } else {
       index = 0;
