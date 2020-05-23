@@ -27,14 +27,13 @@ for (let i = 0, l = codes.length; i < l; i++) {
 }
 
 
-let index = 0;
+
 
 function cheatCodes(codes) {
   const key = codes.key;
-    if (index === codes.length) {
+    if (  triggerKeyDown(codes[i]) === true) {
       alert("Hurray!");
-    }
   } else {
-    index = 0;
+      index = 0;
   }
 }
